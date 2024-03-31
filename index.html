@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+       
+        <div class="container">
+        <div class="calculator">
+            <div class="display">
+            <input type="text" id="display" class="input-box" disabled>
+            </div>
+            <div class="keys">
+                <button class="red" onclick="clearDisplay('')">A/C</button> 
+                <button onclick="appendValue('cos')">cos</button>
+                <button onclick="appendValue('sin')">sin</button>
+                <button onclick="appendValue('tan')">tan</button>
+                <button onclick="appendValue('1')">1</button>
+                <button onclick="appendValue('2')">2</button>
+                <button onclick="appendValue('3')">3</button>
+                <button onclick="appendValue('+')">+</button>
+                <button onclick="appendValue('4')">4</button>
+                <button onclick="appendValue('5')">5</button>
+                <button onclick="appendValue('6')">6</button>
+                <button onclick="appendValue('-')">-</button>
+                <button onclick="appendValue('7')">7</button>
+                <button onclick="appendValue('8')">8</button>
+                <button onclick="appendValue('9')">9</button>
+                <button onclick="appendValue('')"></button>
+                <button onclick="appendValue('.')">.</button> 
+                <button onclick="appendValue('0')">0</button>
+                <button onclick="appendValue('%')">%</button> 
+                <button onclick="appendValue('**')">X^2</button> 
+                <button onclick="appendValue('log')">log</button>
+                <button onclick="appendValue('rad')">rad</button> 
+                <button class="red" onclick="appendValue('')">dle</button> 
+                <button class="green" onclick="calculate()">=</button>
+            </div>
+        </div>
+        </div>
+</body>
+<script src="script.js">
+</script>
+</html>
